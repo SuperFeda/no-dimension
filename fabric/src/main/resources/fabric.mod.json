@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "issues": "https://github.com/SuperFeda/no-dimension/issues",
+        "sources": "https://github.com/SuperFeda/no-dimension"
+    },
+    "license": "${license}",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.superfeda.no_dimension.NoDimension"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14",
+        "fabric": "*",
+        "minecraft": ">=1.19.3 <=1.20.4",
+        "java": ">=17"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
+  
